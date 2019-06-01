@@ -129,6 +129,7 @@ Groupings are based on the categories defined in [the original proposal](https:/
 - ScrollIndicator
 
 ![](Scrolling.png)
+![](ScrollBar.png)
 
 - ProgressBar
 
