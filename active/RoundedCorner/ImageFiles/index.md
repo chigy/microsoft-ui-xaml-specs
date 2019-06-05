@@ -143,6 +143,5 @@ Groupings are based on the categories defined in [the original proposal](https:/
 (Shown above)
 
 - WebView
-- AppBarSeparator
 
 (Not shown)
