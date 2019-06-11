@@ -3,6 +3,8 @@ This "spec" will be what is being propsed to be a documentation that will be add
 
 I am trying out writing a little more "background explanation (WHY)" that our customers have expressed we provide with our documentaiton in some of our focus groups. I would like feedback as this does not follow normal documentation pattern.
 
+I have not reviewed this change proposal with Content Experience team so depending on the conversation, this doc can change.
+
 # Corner Radius
 *Todo: Add thinking behind why we are rounding corners related to Fluent design.*
 
