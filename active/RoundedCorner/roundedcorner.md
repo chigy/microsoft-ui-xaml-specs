@@ -10,10 +10,11 @@ I have not reviewed this change proposal with Content Experience team so dependi
 
 ![CornerRadius](https://github.com/chigy/microsoft-ui-xaml-specs/blob/user/chigy/roundedcorner/active/RoundedCorner/ImageFiles/CornerRadii.png)  
   
-## Principles
+## Design of rounded corner
+### Principles
 *Todo: Add thinking from Fluent design*
 
-## Default designs
+### Default designs
 There are mainly 3 types of UI parts where the radii of the corners are being rounded and here are the descriptions of how this is applied to default controls.
 
 *Corners of rectangle UI elements*
@@ -38,14 +39,14 @@ There are mainly 3 types of UI parts where the radii of the corners are being ro
 - When flyout UI element that is connected to a UI that invokes the flyout on one side.
 ![AutoSuggest](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/user/chigy/roundedcorner/active/RoundedCorner/ImageFiles/AutoSuggest.png)
 
-## Note on keyboard focus rect and shaodow
+### Note on keyboard focus rect and shaodow
 Currently our default design does not require any special work to round the corners of keyboard focus rectangle and shadow. Using higher corner radius value will not break them founcionally, however it is good to be aware of this to avoid unwanted visual glitch that you could introduce with a larger value.
 
-# Using rounded corner in your applications
-## Where to get built in rounded corner
+## Using rounded corner in your applications
+### Where to get built in rounded corner
 The rounded corners will be introduced as a default style for WinUI2.2 (not final), thus applications that uses WinUI version older than 2.2 will receive this automatically. Apps using versions prior to this or not using WinUI will not get this behavior change by default.
 
-## Rounded Corner and Performance
+### Rounded Corner and Performance
 People may not aways be aware of the fact drawing rounded corner naturally use more drawing power compared to square corners. When selecting the value of corner radius, we not only considered the design principles but also were very careful to ensure developers who use our default controls are able to successfully deliver performant applications. 
 
 To simplify this section, think of performnce issues mentioned here to be mainly about page load time as well as app launch time.
@@ -54,5 +55,5 @@ Here are a few key information for people to be aware about the performance:
 - Rounded corners on a larger surface UI are less performant. E.g. avoid drawing rounded corner on a full screen app UI. This is less of an issue if the UI is displayed briefly (e.g. ContentDialog).
 - Drawing many rounded corners at once could be less performant. Many smaller UI with rounded corners perform better than many medium UI with rounded corners.
 
-## Customizing rounding values
+### Customizing rounding values
 When this "spec" becomes the external document, add API details to customize the Corner Radius to different values from #684.
