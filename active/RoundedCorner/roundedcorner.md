@@ -4,13 +4,13 @@ This "spec" will be what is being propsed to be a documentation that will be add
 I am trying out writing a little more "background explanation (WHY)" that our customers have expressed we provide with our documentaiton in some of our focus groups. I would like feedback as this does not follow normal documentation pattern.
 
 # Corner Radius
-<Add thinking behind why we are rounding corners related to Fluent design.>
-![CornerRadii](https://github.com/chigy/microsoft-ui-xaml-specs/blob/user/chigy/roundedcorner/active/RoundedCorner/ImageFiles/CornerRadii.png)  
+*Todo: Add thinking behind why we are rounding corners related to Fluent design.*
+
+![CornerRadius](https://github.com/chigy/microsoft-ui-xaml-specs/blob/user/chigy/roundedcorner/active/RoundedCorner/ImageFiles/CornerRadii.png)  
   
 ## Principles
-<Less is more professional, more is more friendlier...>
+*Todo: Add thinking from Fluent design*
 
-## High level design
 ## Default designs
 There are mainly 3 types of UI parts where the radii of the corners are being rounded and here are the descriptions of how this is applied to default controls.
 
@@ -51,10 +51,5 @@ Here are a few key information for people to be aware about the performance:
 - Rounded corners on a larger surface UI are less performant. E.g. avoid drawing rounded corner on a full screen app UI. This is less of an issue if the UI is displayed briefly (e.g. ContentDialog).
 - Drawing many rounded corners at once could be less performant. Many smaller UI with rounded corners perform better than many medium UI with rounded corners.
 
-
-# Remarks
-
-# API Notes and Details
+# Customizing values
 When this "spec" becomes the external document, add API details to customize the Corner Radius to different values from #684.
-
-# Appendix
