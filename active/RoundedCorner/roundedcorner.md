@@ -5,9 +5,10 @@ I am trying out writing a little more "background explanation (WHY)" that our cu
 
 # Corner Radius
 <Add thinking behind why we are rounding corners related to Fluent design.>
+![CornerRadii](https://github.com/chigy/microsoft-ui-xaml-specs/blob/user/chigy/roundedcorner/active/RoundedCorner/ImageFiles/CornerRadii.png)  
   
 ## Principles
-<Less is more professional, more is more friendlier>
+<Less is more professional, more is more friendlier...>
 
 ## High level design
 ## Default designs
@@ -37,6 +38,9 @@ There are mainly 3 types of UI parts where the radii of the corners are being ro
 
 ## Note on keyboard focus rect and shaodow
 Currently our default design does not require any special work to round the corners of keyboard focus rectangle and shadow. Using higher corner radius value will not break them founcionally, however it is good to be aware of this to avoid unwanted visual glitch that you could introduce with a larger value.
+
+# Where to get built in rounded corner
+The rounded corners will be introduced as a default style for WinUI2.2 (not final), thus applications that uses WinUI version older than 2.2 will receive this automatically. Apps using versions prior to this or not using WinUI will not get this behavior change by default.
 
 # Rounded Corner and Performance
 People may not aways be aware of the fact drawing rounded corner naturally use more drawing power compared to square corners. When selecting the value of corner radius, we not only considered the design principles but also were very careful to ensure developers who use our default controls are able to successfully deliver performant applications. 
